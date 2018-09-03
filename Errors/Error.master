@@ -1,0 +1,30 @@
+﻿<%@ Master Language="VB" CodeFile="Error.master.vb" Inherits="Errors_Error" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <%--<link rel="stylesheet" property="stylesheet" type="text/css" href="<%: Styles.Url("~/bundles/CSS-talulabelle") %>" />--%>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <section class="errors bg-error ">
+            <div class="overlay">
+                <div class="container">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </section>
+    </form>
+</body>
+</html>

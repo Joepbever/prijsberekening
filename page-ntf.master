@@ -1,0 +1,248 @@
+﻿<%@ Master Language="VB" CodeFile="page-ntf.master.vb" Inherits="page" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html>
+<html lang="nl-nl" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="shortcut icon" type="image/x-icon" href="/Resources/img/meta-icons/favicon.png" />
+    <!-- APPLE METATAGS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="/Resources/img/meta-icons/120x120.png" rel="apple-touch-icon" />
+    <link href="/Resources/img/meta-icons/152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/Resources/img/meta-icons/76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/Resources/img/meta-icons/120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/Resources/img/meta-icons/310x480.png" rel="apple-touch-startup-image" />
+    <link rel="mask-icon" href="/Resources/img/meta-icons/favicon.svg" color="#fff" />
+    <!-- WINDOWS PHONE METATAGS-->
+    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-square70x70logo" content="/Resources/img/meta-icons/70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/Resources/img/meta-icons/150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/Resources/img/meta-icons/310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/Resources/img/meta-icons/310x310.png" />
+    <!-- TWITTER METATAGS -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="/Resources/img/meta-icons/120x120.png" />
+
+    <asp:PlaceHolder runat="server">
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="/Resources/bundels/master.min.css" />
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    </asp:PlaceHolder>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <form runat="server" class="divGlobalForm">
+
+        <header class="hidden">
+            <div class="container-fluid">
+                <div class="header-items">
+<%--                    <div class="item JSlinks"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                    <div class="item"><a href="#" id="aAccount" runat="server"><i class="fa fa-user" aria-hidden="true"></i></a></div>
+                    <div class="item JScart"><a href="#" class="cart liCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>--%>
+                </div>
+
+                <nav class="custom-nav">
+                    <div class="content">
+
+                        <a runat="server" id="aLogo" href="/" class="logo">
+                            <img runat="server" id="imgLogo" src="" class="img-responsive" /></a>
+                        <div class="nav-items ">
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div id="hamburger" class="JStoggleMenu NavToggle hidden-xs">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <header>
+            <div class="fixed">
+                <div class="breadcrumbs hidden-xs">
+                    <ul>
+                        <li>Home</li>
+                        <li>Sweaters</li>
+                    </ul>
+                </div>
+                <div class="breadcrumbs-menu NavToggle visible-xs">
+                    Menu
+                </div>
+
+                <div class="logo"></div>
+
+                <div class="toggle-bag BagToggle">
+                    bag <span class="space"></span>
+                    (<span class="spanCountProducts"><asp:Literal runat="server" ID="ltlCountProducts" /></span>)
+                </div>
+
+            </div>
+
+            <nav>
+                <ul class="main menu">
+                    <asp:Repeater ID="repMenu" OnItemDataBound="repMenu_ItemDataBound" runat="server">
+                        <ItemTemplate>
+                            <li runat="server" id="liFirst">
+                                <a href='<%# Eval("sCode").ToString.ToLower & "/" & Eval("sQueryString") %>' runat="server" id="aFirst"><asp:Literal Text='<%# Eval("sText") %>' runat="server" /></a>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+
+                <%--<div class="toggle-close NavToggle"></div>--%>
+
+                <ul class="side">
+                    <li>
+                        <%--                        <a href="/nl/ntf-contact">contact</a>--%>
+                        <asp:HyperLink ID="aContact" runat="server">contact</asp:HyperLink>
+                    </li>
+                    <li>
+                        <%--                        <a href="/nl/ntf-terms">terms</a>--%>
+                        <asp:HyperLink ID="aTerms" runat="server">terms</asp:HyperLink>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="overlap" hidden></div>
+        <div class="drop">
+
+            <div class="JSclose-cart BagToggle col-xs-12">
+                <img class="pull-right" src="/Resources/img/ninetyfour/close-black.png"></img>
+            </div>
+            <div class="divCartHolder">
+                <div class="list">
+                    <asp:Repeater ID="repWinkelwagen" runat="server">
+                        <ItemTemplate>
+                            <div class="article">
+                                <div class="col-xs-12">
+                                    <div class="article-top col-xs-12">
+                                        <div class="col-xs-12 article-title">
+                                            <span class="">
+                                                <asp:Literal ID="Literal5" Text='<%# Eval("sArtikelOmschrijving")%>' runat="server" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="text-align: center;">
+                                        <img src="<%# Eval("sSmall").ToString().Replace("~/", BP.sURL()) %>" alt="" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="article-bottom col-xs-12">
+                                    <div class="col-xs-6">
+                                        <span class="article-qty  pull-left">QTY &nbsp;&nbsp;&nbsp;
+                                                <asp:Literal Text='<%# CInt(Eval("iAantal")) %>' runat="server" /></span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span class="article-price pull-right">&euro;<asp:Literal ID="Literal1" Text='<%# Eval("iStuksPrijs")%>' runat="server" /></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div class="col-md-12">
+                    <hr class="blackHr" />
+                </div>
+                <div class="amount">
+                    <div class="item">
+                        <div class="col-xs-6">
+                            <span class="pull-left">amount</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="price pull-right">&euro;
+                                <asp:Literal id="ltlTotalTop" runat="server" /></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6">
+                            <span class="pull-left">subtotal</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="price pull-right">&euro;
+                                <asp:Literal id="ltlSubTotal" runat="server" /></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6">
+                            <span class="pull-left">discount</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="price pull-right">&euro;
+                                <asp:Literal id="ltlDiscount" runat="server" /></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6">
+                            <span class="pull-left">total</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="price pull-right">&euro;
+                                <asp:Literal id="ltlTotal" runat="server" /></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 btn-checkout">
+                    <asp:HyperLink id="aCheckout" CssClass="pull-right btn btn-underline" runat="server" Text="Checkout" />
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <!-- Modal -->
+        <div id="newsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <a class="btn-close" data-dismiss="modal">
+                            <img src="/Resources/img/ninetyfour/close-black.png" alt="Alternate Text" /></a>
+                        <img src="/Resources/img/ninetyfour/newModal.png" alt="" />
+                        <div class="modal_text">
+                            <h6>You will be the first to hear about:</h6>
+                            <ul>
+                                <li>Special promotions</li>
+                                <li>New arrivals</li>
+                                <li>Designer news</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <h5 class="col-sm-4 col-xs-12">Sign up for our email list</h5>
+                            <div class="col-sm-6 col-xs-12 paddingless">
+                                <asp:TextBox ID="txtEmailModal" CssClass="form-control" TextMode="Email" placeholder="Email adress" runat="server" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-12">
+                            <asp:Button runat="server" CssClass="btn btn-subscribe" ID="btnSubscribe" UseSubmitBehavior="False" Text='Subscribe' />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <asp:PlaceHolder runat="server">
+            <script type="text/javascript" src='/Resources/bundels/master.min.js'></script>
+            <script type="text/javascript" src='/Resources/bundels/formValidation.min.js'></script>
+        </asp:PlaceHolder>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:HiddenField ID="hidLanguage" runat="server" />
+
+    </form>
+</body>
+</html>

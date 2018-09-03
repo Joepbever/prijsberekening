@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<methodCall>
+  <methodName>Address.view</methodName>
+  <params>
+    <param>
+      <value>
+        <string>[key]</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>[secret]</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>[postcode]</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <int>[huisnummer]</int>
+      </value>
+    </param>
+  </params>
+</methodCall>

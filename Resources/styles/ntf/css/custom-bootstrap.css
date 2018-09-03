@@ -1,0 +1,82 @@
+﻿
+.xs-mt-20px { margin-top: 20px; }
+.xs-mt-30px { margin-top: 30px; }
+.xs-mb-30px { margin-bottom: 30px; }
+.xs-ml-50px { margin-left: 50px; }
+.xs-mb-0px { margin-bottom: 0px; }
+.xs-mt-42px { margin-top: 42px; }
+.xs-pr-0px { padding-left: 0px; }
+.xs-pr-0px { padding-right: 0px; }
+.xs-pl-0px { padding-left: 0px; }
+.xs-pl-7px { padding-left: 7px; }
+.xs-pr-7px { padding-right: 7px; }
+.xs-pl-15px { padding-left: 15px; }
+.xs-pr-15px { padding-right: 15px; }
+.xs-pr-30px { padding-right: 30px; }
+.xs-pb-60px { padding-bottom: 60px; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767.5px) {
+
+    .sm-mt-20px { margin-top: 20px; }
+    .sm-pl-7px { padding-left: 7px; }
+    .sm-pr-7px { padding-right: 7px; }
+    .sm-pl-15px { padding-left: 15px; }
+    .sm-pr-15px { padding-right: 15px; }
+    .sm-pb-144px { padding-bottom: 144px; }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 991.5px) {
+
+    .md-ml-200px { margin-left: 200px; }
+    .md-mt-0px { margin-top: 0px; }
+    .md-ml-15px { margin-left: 15px; }
+    .md-mt-42px { margin-top: 42px; }
+    .md-pr-0px { padding-right: 0px; }
+    .md-pl-0px { padding-left: 0px; }
+    .md-pl-7px { padding-left: 7px; }
+    .md-pr-7px { padding-right: 7px; }
+    .md-pl-15px { padding-left: 15px; }
+    .md-pr-15px { padding-right: 15px; }
+    .md-pb-244px { padding-bottom: 244px; }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .lg-pl-7px { padding-left: 7px; }
+    .lg-pr-7px { padding-right: 7px; }
+    .lg-pl-15px { padding-left: 15px; }
+    .lg-pr-15px { padding-right: 15px; }
+    .lg-pb-344px { padding-bottom: 344px; }
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991.5px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

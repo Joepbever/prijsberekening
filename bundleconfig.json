@@ -1,0 +1,51 @@
+//USE RESPECTIVELY
+
+[
+  {
+    "outputFileName": "Resources/bundels/master.min.css",
+    "inputFiles": [
+      "Vendor/bootstrap-4.1/css/bootstrap.min.css", //Bootstrap 4.1
+      "Vendor/fontawesome-free-5.1.0-web/css/all.css", // Font-Awsome 5.1.0
+      "Vendor/formvalidation/formValidation.min.css", //Form validation updateten
+      "Vendor/slick/slick.css", // slick ?? custom
+      "Resources/styles/css/main.css", //Main css file
+      "Resources/styles/ntf/css/checkbox.css", // basis: checkbox.css
+      "Resources/styles/ntf/css/main.css" //Main css file
+    ]
+  },
+  {
+    "outputFileName": "Resources/bundels/master.min.js",
+    "inputFiles": [
+      "Vendor/jquery/jquery-3.3.1.min.js", //Jquery 3.3.1
+      "Vendor/bootstrap-4.1/js/popper.min.js", // Bootstrap jquery 4.1
+      "Vendor/bootstrap-4.1/js/bootstrap.min.js", // Bootstrap jquery 4.1
+      "Vendor/slick/slick.min.js", //Slick slider
+      "Resources/js/main.js", //Main css file
+      "Vendor/tweenmax.js", // Bootstrap jquery 4.1
+      "Vendor/ScrollMe.js", //Lookbook page
+      "Vendor/isotope/isotope.pkgd.min.js", //Lookbook page
+      "Vendor/isotope/isotope.min.js", //Lookbook page
+      "Resources/js/ntf/ninetyfour.js", //deafult.js
+      "Resources/js/ntf/menu-nf.js", // Menu
+      "Resources/js/ntf/default.js", // Default page
+      "Resources/js/ntf/lookbook.js", // Lookbook page
+      "Resources/js/ntf/ntf-product.js", //Product page
+      "Resources/js/pages/winkelwagen.js",
+      "Resources/js/pages/product.js",
+      "Resources/js/pages/bestellen-stappen.js",
+      "Resources/js/pages/shopthelook.js"
+    ]
+  },
+  {
+    "outputFileName": "Resources/bundels/formValidation.min.js",
+    "inputFiles": [
+      "Vendor/formvalidation/form-validation.min.js",
+      "Vendor/formvalidation/bootstrap.min.js",
+      "Vendor/formvalidation/datevalidator.js",
+      "Resources/js/validations.js",
+      "Resources/js/pages/register.js",
+      "Resources/js/pages/SecurityQuestion.js",
+      "Resources/js/global-validation.js"
+    ]
+  }
+]

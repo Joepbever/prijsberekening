@@ -1,0 +1,518 @@
+﻿<%@ Master Language="VB" CodeFile="page.master.vb" Inherits="page" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html>
+<html lang="nl-nl" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="shortcut icon" type="image/x-icon" href="/UI/images/meta-icons/favicon.png" />
+
+    <!-- APPLE METATAGS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="/UI/images/meta-icons/120x120.png" rel="apple-touch-icon" />
+    <link href="/UI/images/meta-icons/152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/UI/images/meta-icons/76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/UI/images/meta-icons/120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/UI/images/meta-icons/310x480.png" rel="apple-touch-startup-image" />
+    <link rel="mask-icon" href="/UI/images/meta-icons/favicon.svg" color="#fff" />
+
+    <!-- WINDOWS PHONE METATAGS-->
+    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-square70x70logo" content="/UI/images/meta-icons/70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/UI/images/meta-icons/150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/UI/images/meta-icons/310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/UI/images/meta-icons/310x310.png" />
+
+    <!-- TWITTER METATAGS -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="/UI/images/meta-icons/120x120.png" />
+
+    <asp:PlaceHolder runat="server">
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="/Resources/bundels/master.min.css" />
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="/Resources/styles/css/default.css" />
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="/Resources/styles/css/responsivness.css" />
+    </asp:PlaceHolder>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116131340-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116131340-1');
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <form runat="server" class="divGlobalForm">
+
+
+        <div class="alert alert-danger" role="alert" runat="server" id="divError" visible="false">
+            <asp:Literal runat="server" ID="ltlError" />
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-end">
+
+
+                <div class="col-3" style="display:none">
+                    <div class="form-inline">
+                        <asp:TextBox runat="server" ID="txtSearch" placeholder="Search" CssClass="form-control" />
+                        <button role="button" type="button" runat="server" id="btnSearch" class="btn btn-dark">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-3" style="display:none">
+                    <div class="btn-group">
+
+
+                        <asp:Button Text="Login in ZZP-er" CssClass="btn btn-link" runat="server" />
+
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                Log in
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="form-group first">
+                                    <asp:TextBox data-enter-trigger="#btnLogin" CssClass="form-control" runat="server" ID="txtGn" placeholder='Gebruikersnaam*' />
+                                </div>
+
+                                <div class="form-group">
+                                    <asp:TextBox data-enter-trigger="#btnLogin" CssClass="form-control" TextMode="Password" runat="server" ID="txtLoginPassword" placeholder='<%$ Resources:Resource, formPassword %>' />
+                                </div>
+                                <asp:Button runat="server" ID="btnLogin" OnClientClick="return isLoginValid()" UseSubmitBehavior="False" OnClick="btnLogin_Click" CssClass="btn btn-login" Text='Inloggen' />
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+<%--                <div class="col-3">
+                    <a href="whatsapp://send?text=<%: sWhatsAppNummer %>,&phone=<%: sWhatsAppNummer %>&abid=<%: sWhatsAppNummer %>" class="btn btn-dark"><i class="fab fa-whatsapp"></i>app ons op <%: sWhatsAppNummer %></a>
+                </div>--%>
+
+            </div>
+        </div>
+        
+
+        <header id="menu" <%--style="display:none"--%>>
+            <div class="navbar-home">
+                <div class="menuContainer">
+                    <a class="navbar-brand">
+                    <div class="deskLogo">
+                                <img src="/Resources/img/logo-menu.png" />
+                                prijsberekening<span class="orange-color">.nl</span><br class="brdisplay"/> meppel
+                    </div>
+                    </a>
+                    <ul class="nav nav-hamburger">
+                        <a href="http://www.shop.zonweringwebwinkel.nu/" target="_blank"><li class="nav-links">Zonwering</li></a>
+                        <a href="https://kozijnenwebwinkel.nu/" target="_blank"><li class="nav-links">Kozijnen</li></a>
+                        <a href="http://www.shop.garagedeurenwebwinkel.nu/" target="_blank"><li class="nav-links">Garagedeuren</li></a>
+                        <a href="http://shop.terrasoverkappingwebwinkel.nu/" target="_blank"><li class="nav-links">Terasoverkapping</li></a>
+                    </ul>
+                   
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    </div>
+                </div>
+                <asp:Repeater ID="repMenu" OnItemDataBound="repMenu_ItemDataBound" runat="server">
+                    <ItemTemplate>
+                        <li runat="server" id="liFirst" class="btn btn-link">
+                            <a title='<%# Eval("sText") %>' runat="server" id="aFirst">
+                                <asp:Literal Text='<%# Eval("sText") %>' runat="server" /></a>
+                            <asp:Repeater ID="repSubMenu" OnItemDataBound="repSubMenu_ItemDataBound" runat="server">
+                                <HeaderTemplate>
+                                    <div class="container-fluid nav-big-down nav-products divNavProducts ">
+                                        <ul>
+                                </HeaderTemplate>
+                                <ItemTemplate>
+                                    <li runat="server" id="liSecond">
+                                        <a runat="server" id="aSecond" title='<%# Eval("sText") %>'>
+                                            <asp:Literal Text='<%# Eval("sText") %>' runat="server" /></a>
+                                    </li>
+                                    <asp:Repeater runat="server" ID="repCategories" OnItemDataBound="repCategories_ItemDataBound">
+                                        <ItemTemplate>
+                                            <li class="autoHeightChild">
+                                                <a class="title" id="aTitle1" runat="server">
+                                                    <asp:Literal runat="server" Text='<%# Eval("sTitle") %>' />
+                                                </a>
+
+                                                <%--VOOR SUBCATEGORIEEN--%>
+                                                <asp:Repeater ID="repSubCategories" OnItemDataBound="repSubCategories_ItemDataBound" runat="server">
+                                                    <HeaderTemplate>
+                                                        <ul>
+                                                    </HeaderTemplate>
+                                                    <ItemTemplate>
+                                                        <li>
+                                                            <a id="aSub" runat="server">
+                                                                <asp:Literal Text='<%# Eval("sTitle") %>' runat="server" /></a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                    <FooterTemplate>
+                                                        </ul>
+                                                    </FooterTemplate>
+                                                </asp:Repeater>
+
+                                                <%--VOOR ARTIKELEN--%>
+                                                <%--<asp:Repeater runat="server" ID="repArtikelen" OnItemDataBound="repArtikelen_ItemDataBound">
+                                                                <HeaderTemplate>
+                                                                    <ul>
+                                                                </HeaderTemplate>
+                                                                <ItemTemplate>
+                                                                    <li><a runat="server" id="aArtikelLink">
+                                                                        <asp:Literal runat="server" Text='<%# Eval("sArtikel") %>' /></a></li>
+                                                                </ItemTemplate>
+                                                                <FooterTemplate>
+                                                                    </ul>
+                                                                </FooterTemplate>
+                                                            </asp:Repeater>--%>
+                                                <a class="look-more" id="aTitle2" runat="server">
+                                                    <asp:Literal runat="server" ID="ltlWatchAll" Text="<%$ Resources:Resource, ltlWatchAll %>" />
+                                                    <asp:Literal runat="server" Text='<%# Eval("sTitle") %>' />
+                                                </a>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ItemTemplate>
+                                <FooterTemplate>
+                                    </ul>
+                                </div>
+                                </FooterTemplate>
+                            </asp:Repeater>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+            <div class="row" style="display:none;">
+                <img src="http://via.placeholder.com/1920x400" class="rounded mx-auto d-block" alt="error">
+            </div>
+
+            
+
+
+            <%--            <div class="container-fluid">
+                <div class="header-items">
+                    <div class="item JSlinks"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                    <div runat="server" id="aLogin" class="item JSLogin"><a href="#" id="aAccount" runat="server"><i class="fa fa-user" aria-hidden="true"></i></a></div>
+                    <div class="item JScart">
+                        <a href="#" class="cart liCart">
+                            <img src="/ui/images/wallet.png" /></a>
+                        <span runat="server" enableviewstate="true"><b class="spanCountProducts">
+                            <asp:Literal runat="server" ID="ltlCountProducts" Text="0" /></b></span>
+                    </div>
+                </div>
+
+
+                <ul class="nav-footer">
+                    <li><a href="https://goo.gl/maps/ij9q9YgoYep" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                    <li><a href="#" runat="server" id="mMail"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                    <li><a href="#" runat="server" id="mFb" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="#" runat="server" id="mInsta" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <a class="toggle">
+                <span id="divWinkelmandTotal" runat="server" enableviewstate="true" class="total hidden">€<asp:Literal runat="server" ID="ltlTotalTop" /></span>
+            </a>--%>
+
+            <%--<div class="footer">
+                    <a href="#" target="_blanc">
+                    <div class="facebook button">
+                    <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                    </div>
+                    </a>
+                    <a href="#" target="_blanc">
+                    <div class="instagram button">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                    </div>
+                    </a>
+                    <a href="#" target="_blanc">
+                    <div class="twitter button">
+                    <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                    </div>
+                    </a>
+                    </div>--%>
+            <%--            <div class="topheader">
+                    <div class="row">
+                    <div class="time1 hidden-xs">
+                    <asp:Literal ID="ltlVandaag" runat="server" />
+                    <asp:Literal ID="ltlClosed" runat="server" Visible="false" />
+                    </div>
+                    <div class="phone hidden-xs">
+                    <a href="tel:0161233461">
+                    <div class="img"></div>
+                    <span><asp:Literal ID="ltlTelefoonnummer" runat="server" /></span>
+                    </a>
+                    </div>
+                    </div>
+                    </div>--%>
+            <%--                </nav>
+                <div class="drop fs1">
+                    <div class="JSclose-cart"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div class="inner">
+                        <h5>
+                            <asp:Label Text="<%$ Resources:Resource, shoppingCart %>" runat="server" /></h5>
+                    </div>
+                    <div class="divCartHolder">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7 col-xs-12">
+                            <a runat="server" id="aCart" class="btn-cart">
+                                <asp:Literal ID="Literal2" Text="<%$ Resources:Resource, shoppingcart %>" runat="server" /></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="login fs1" runat="server" id="divLogin">
+                <div class="JSLogin-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div class="inner">
+                    <h5>
+                        <asp:Label Text="<%$ Resources:Resource, login %>" runat="server" /></h5>
+                </div>
+
+
+
+                <div class="form-group first">
+                    <asp:TextBox data-enter-trigger="#btnLogin" CssClass="form-control" runat="server" ID="txtGn" placeholder='Gebruikersnaam*' />
+                </div>
+
+                <div class="form-group">
+                    <asp:TextBox data-enter-trigger="#btnLogin" CssClass="form-control" TextMode="Password" runat="server" ID="txtLoginPassword" placeholder='<%$ Resources:Resource, formPassword %>' />
+                </div>
+                <asp:Button runat="server" ID="btnLogin" OnClientClick="return isLoginValid()" UseSubmitBehavior="False" OnClick="btnLogin_Click" CssClass="btn btn-login" Text='Inloggen' />
+                <asp:Literal ID="ltlLogin" runat="server" />
+            </div>
+            </div>
+
+            <div class="search-menu">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="content">
+                            <div class="col-lg-12">
+                                <div class="JSclose-search"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+                                <asp:Literal runat="server" ID="ltlHelpingYou" />--%>
+            <%--<div class="form-group">
+                                    <asp:TextBox data-enter-trigger="#btnSearch" CssClass="form-control" runat="server" ID="TextBox2" placeholder='Omslagdoek' />
+
+                                    <div class="btn-searchs" id="search">
+                                        <asp:Button runat="server" ID="btnSearch" UseSubmitBehavior="false" OnClientClick="isSearchValid()" CssClass="" />
+                                    </div>
+                                </div>--%>
+            <%--                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hamburger" class="JStoggleMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>--%>
+        </header>
+
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer id="footer" style="display:none;">
+            <div class="container">
+                <div class="row">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <asp:TextBox runat="server" CssClass="form-control" ID="txtNameMaster" placeholder='Naam' />
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox runat="server" CssClass="form-control" ID="txtEmailMaster" placeholder='Email' />
+                        </div>
+                        <asp:Button runat="server" ID="btnSubscribe" class="btn btn-dark" UseSubmitBehavior="false" Text='Submit' />
+                        <asp:Literal runat="server" ID="ltlMessage" />
+                    </div>
+                </div>
+                <div class="row">
+                    <asp:Literal ID="ltlMaps" runat="server" />
+                    <asp:Literal ID="ltlTelefoon" runat="server" />
+                    <asp:Literal ID="ltlEmail" runat="server" />
+                    <asp:Literal ID="ltlKVK" runat="server" />
+                </div>
+                <div class="list-inline">
+                    <div class="list-inline-item" id="liFacebook" runat="server">
+                        <a runat="server" id="aFacebook" href="" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="list-inline-item" id="liLinkedIn" runat="server">
+                        <a runat="server" id="aLinkedIn" href="" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="list-inline-item" id="liTwitter" runat="server">
+                        <a runat="server" id="aTwitter" href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer-pb">
+            <div class="container-fluid section-boxes">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo-footer">
+                            <div class="deskLogo">
+                                <img src="/Resources/img/logo-menu.png" />
+                                prijsberekening<span class="orange-color">.nl</span> meppel
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 info">
+                        <b>Kozijnenwebwinkel</b><ul>
+                            <li><a href="tel:016251361522" target="_blank">0162 51 3615 22</a></li>
+                            <li><a href="mailto:info@prijsberekeningmeppel.nl" target="_blank">info@prijsberekeningmeppel.nl</a></li>
+                            <li>KVK: 59703571 te Breda</li>
+                            <li>BTW nr.: NL853611336B01</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 col-sm-6 links">
+                        <b>Bel mij terug</b>
+                        <div class="form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="txtName">Naam</label>
+                                    <div class="form-group first has-feedback has-error">
+                                        <input name="ctl00$txtName" type="text" id="txtName" class="form-control" data-enter-focus="#txtEmail" placeholder="Uw naam" data-fv-field="ctl00$txtName"><i class="form-control-feedback fv-icon-no-label glyphicon glyphicon-remove" data-fv-icon-for="ctl00$txtName" style="display: block;"></i>
+                                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="ctl00$txtName" data-fv-result="INVALID" style="display: inline;">Uw naam is niet ingevuld.</small><small class="help-block" data-fv-validator="regexp" data-fv-for="ctl00$txtName" data-fv-result="VALID" style="display: none;">Naam kan alleen bestaan uit letters.</small></div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="txtEmail">E-mail</label>
+                                    <div class="form-group has-feedback has-error">
+                                        <input name="ctl00$txtEmail" type="email" id="txtEmail" class="form-control" data-enter-focus="#txtPhone" placeholder="Uw e-mailadres" data-fv-field="ctl00$txtEmail"><i class="form-control-feedback fv-icon-no-label glyphicon glyphicon-remove" data-fv-icon-for="ctl00$txtEmail" style="display: block;"></i>
+                                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="ctl00$txtEmail" data-fv-result="INVALID" style="display: inline;">Uw e-mailadres is verplicht.</small><small class="help-block" data-fv-validator="emailAddress" data-fv-for="ctl00$txtEmail" data-fv-result="VALID" style="display: none;"> </small><small class="help-block" data-fv-validator="regexp" data-fv-for="ctl00$txtEmail" data-fv-result="VALID" style="display: none;">Dit is geen geldig e-mailadres.</small></div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="txtPhone">Telefoon</label>
+                                    <div class="form-group has-feedback has-error">
+                                        <input name="ctl00$txtPhone" type="tel" id="txtPhone" class="form-control" data-enter-focus="#txtMessage" placeholder="Telefoonnummer*" data-fv-field="ctl00$txtPhone"><i class="form-control-feedback fv-icon-no-label glyphicon glyphicon-remove" data-fv-icon-for="ctl00$txtPhone" style="display: block;"></i>
+                                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="ctl00$txtPhone" data-fv-result="INVALID" style="display: inline;">U heeft geen telefoonnummer ingevuld.</small><small class="help-block" data-fv-validator="regexp" data-fv-for="ctl00$txtPhone" data-fv-result="VALID" style="display: none;">Een mobiele telefoonnummer mag alleen bestaan uit cijfers.</small></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-12 col-md-12">
+                                    <label for="txtMessage">Uw bericht</label>
+                                    <div class="form-group">
+                                        <textarea name="ctl00$txtMessage" rows="2" cols="20" id="txtMessage" class="form-control" data-enter-trigger="#btnSubmit" placeholder="Uw bericht"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-xl-4">
+                                    <input type="button" name="ctl00$btnSubmit" value="Versturen" onclick="return isContactValid();__doPostBack('ctl00$btnSubmit','')" id="btnSubmit" class="btn btn-default btn-white">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 offset-md-1 col-sm-12 links links-right">
+                        <div class="payment no-user-select">
+                            <ul>
+                                <li><img src="Resources/img/visa.png"></li>
+                                <li><img src="Resources/img/min_master-card.png"></li>
+                                <li><img src="Resources/img/min_mister-cash.png"></li>
+                                <li><img src="Resources/img/min_ideal.png"></li></ul>
+                        </div>
+                        <div class="no-user-select bottomlinks">
+                            <br>
+<ul>
+<li>
+<a href="/Uploads/Editor/Kochs Product Brochure K Vision 076 totaal.pdf" target="_blank"><img src="https://www.kozijnenwebwinkel.nu/Uploads/Editor/min_kochs-logo.png"></a>
+</li>
+<li>
+<a href="/Uploads/Editor/KOCHS_CERT.PDF" target="_blank">
+<img src="https://www.kozijnenwebwinkel.nu/Uploads/Editor/min_certifering2-sm.jpg">
+</a>
+</li>
+<li>
+<a href="/Uploads/Editor/KOCHS_CERT.PDF" target="_blank">
+<img src="https://www.kozijnenwebwinkel.nu/Uploads/Editor/min_certificering-sm.jpg">
+</a>
+</li>
+</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copy" style="display:none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <asp:Literal ID="ltlCopyrights" runat="server" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="divOpeningstijden" runat="server" visible="false">
+            <asp:Literal ID="ltlVandaag" runat="server" />
+            <table>
+                <tbody>
+                    <asp:Repeater ID="repOpeningstijden" runat="server">
+                        <ItemTemplate>
+                            <tr runat="server" id="trDay">
+                                <td>
+                                    <asp:Literal ID="ltlDayOfWeek" runat="server" Text='<%# Eval("iDayOfWeek") %>' /></td>
+                                <td>
+                                    <asp:Literal runat="server" Text='<%# CDate(Eval("dtStart")).ToString("HH:mm") & "-" & CDate(Eval("dtEnd")).ToString("HH:mm")%>' /><br>
+                                </td>
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </tbody>
+            </table>
+        </div>
+
+        <asp:PlaceHolder runat="server">
+            <script type="text/javascript" src='/Resources/bundels/master.min.js'></script>
+            <script type="text/javascript" src='/Resources/bundels/formValidation.min.js'></script>
+            <script type="text/javascript" src='/Resources/js/MyScript.js'></script>
+        </asp:PlaceHolder>
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:HiddenField ID="hidLanguage" runat="server" />
+
+
+    </form>
+</body>
+</html>

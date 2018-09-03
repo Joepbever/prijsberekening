@@ -1,0 +1,49 @@
+﻿.btn {
+    line-height: 35px;
+    padding: 10px 20px;
+    font-size: 32px;
+}
+
+.btn-default {
+    text-transform: uppercase;
+    padding: 12px 20px;
+    background: #2f9493;
+    font-size: 28px;
+    color: #fff;
+    border: none;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991.5px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767.5px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

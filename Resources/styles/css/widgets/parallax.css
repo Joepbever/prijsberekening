@@ -1,0 +1,113 @@
+﻿.parallax-container{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    min-height: 535px;
+    max-height: 535px;
+    position: relative;
+    overflow:hidden;
+}
+
+.parallax-container-cases{
+    max-height: inherit !important;
+}
+
+.parallax-image{
+    position: absolute;
+    width: 100%;
+}
+
+.parallax-container-slot{
+    background-position: top !important;
+}
+
+.parallax-image-visie{ top: -250px; }
+.parallax-image-creatie{ top: -375px; }
+.parallax-image-regie{ top: -475px; }
+.parallax-image-productie{ top: -625px; }
+.parallax-image-stats{ top: -925px; }
+.parallax-image-more{ top: -500px; }
+.parallax-image-more1{ top: -50px; }
+.parallax-image-cases{ top: -175px; }
+.parallax-image-slot{ top: -1250px; }
+
+@media only screen and (min-width : 992px) {
+
+    .parallax-image-slot {
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+    .parallax-container{
+        min-height: 435px;
+        max-height: 435px;
+    }
+
+    .parallax-container-stats{
+        min-height: 535px;
+        max-height: 550px;
+    }
+
+}
+
+@media only screen and (max-width : 1100px) {
+
+    .parallax-container{
+        min-height: 335px;
+        max-height: 335px;
+    }
+
+    .parallax-container-stats{
+        min-height: 535px;
+        max-height: 550px;
+    }
+
+}
+
+@media only screen and (max-width : 992px) {
+
+    .parallax-image{
+        display: block;
+    }
+
+     .parallax-container{
+        min-height: 235px;
+    }
+
+    .parallax-image {
+        height: 500px;
+        position: absolute;
+        right: 0;
+        object-fit: cover;
+        width: 100vw;
+        z-index: -999;
+        -moz-transition: all 400ms cubic-bezier(.25,.45,.59,.8);
+        -o-transition: all 400ms cubic-bezier(.25,.45,.59,.8);
+        -webkit-transition: all 400ms cubic-bezier(.25,.45,.59,.8);
+        transition: all 400ms cubic-bezier(.25,.45,.59,.8);
+    }
+
+    .parallax-image-stats {
+        height: 800px;
+    }
+
+    .parallax-image-more1 {
+        height: 75vw;
+        min-height: 450px;
+    }
+
+    .parallax-image-cases {
+        height: 120vh;
+        min-height: 1000px;
+    }
+
+}
+

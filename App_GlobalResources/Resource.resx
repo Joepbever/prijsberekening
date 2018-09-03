@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btnBackLogin" xml:space="preserve">
+    <value>Terug naar inloggen</value>
+  </data>
+  <data name="BtnAddToCart" xml:space="preserve">
+    <value>toevoegen aan winkeltas</value>
+  </data>
+  <data name="btnBackAlbums" xml:space="preserve">
+    <value>&lt; Terug naar albums</value>
+  </data>
+  <data name="btnBackOverview" xml:space="preserve">
+    <value>&lt; Terug naar overzicht</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="btnRemove" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>Verzenden</value>
+  </data>
+  <data name="btnSendMessage" xml:space="preserve">
+    <value>Verstuur</value>
+  </data>
+  <data name="btnRegisterNow" xml:space="preserve">
+    <value>Registreer</value>
+  </data>
+  <data name="btnCheckout" xml:space="preserve">
+    <value>Afrekenen</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Leeg winkelwagen</value>
+  </data>
+  <data name="btnRetrievePassword" xml:space="preserve">
+    <value>Wachtwoord opvragen</value>
+  </data>
+  <data name="BtnAddToCart1" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="btnBackAlbums1" xml:space="preserve">
+    <value>&lt; Terug naar albums</value>
+  </data>
+  <data name="btnBackOverview1" xml:space="preserve">
+    <value>&lt; Terug naar overzicht</value>
+  </data>
+  <data name="btnNextStep" xml:space="preserve">
+    <value>Verder winkelen</value>
+  </data>
+  <data name="btnNextStep1" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="btnPrevStep" xml:space="preserve">
+    <value>Vorige stap</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Aanpassen</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="btnBestelingVoltooien" xml:space="preserve">
+    <value>Bestelling voltooien</value>
+  </data>
+  <data name="ErrorLand" xml:space="preserve">
+    <value>Land bestaat niet.</value>
+  </data>
+  <data name="ErrorZipCode" xml:space="preserve">
+    <value>Postcode is niet valid</value>
+  </data>
+  <data name="ErrorHuisNr" xml:space="preserve">
+    <value>Huisnummer kan alleen uit cijfers bestaan.</value>
+  </data>
+  <data name="ErrorTov" xml:space="preserve">
+    <value>Toevoegen kan alleen uit cijfers bestaan.</value>
+  </data>
+  <data name="ErrorStraat" xml:space="preserve">
+    <value>Straat kan alleen uit letters bestaan.</value>
+  </data>
+  <data name="ErrorStad" xml:space="preserve">
+    <value>Staat kan alleen uit letters bestaan.</value>
+  </data>
+  <data name="ErrorNaam" xml:space="preserve">
+    <value>Uw voornaam moet tussen 1 en 100 tekens lang zijn en mag geen speciale tekens of cijfers bevatten.</value>
+  </data>
+  <data name="ErrorAchternaamNaam" xml:space="preserve">
+    <value>Uw achternaam moet tussen 1 en 100 tekens lang zijn en mag geen speciale tekens of cijfers bevatten.</value>
+  </data>
+  <data name="ErrorEmail" xml:space="preserve">
+    <value>Uw e-mailadres is niet geldig.</value>
+  </data>
+  <data name="ErrorPhone" xml:space="preserve">
+    <value>Uw mobiele nummer is niet geldig.</value>
+  </data>
+  <data name="ErrorWachtwordVergelijking" xml:space="preserve">
+    <value>Wachtwoorden komen niet overeen.</value>
+  </data>
+  <data name="ErrorWachtword8" xml:space="preserve">
+    <value>Wachtwoord moet minimaal 8 tekens lang zijn.</value>
+  </data>
+  <data name="ErrorWachtword30" xml:space="preserve">
+    <value>Wachtwoord mag niet langer zijn dan 30 tekens.</value>
+  </data>
+  <data name="ErrorWachtwordAlgemeen" xml:space="preserve">
+    <value>Wachtwoord moet een soort interpunctie, een hoofdletter of een cijfer bevatten. Twee hiervan moeten worden gekoppeld.</value>
+  </data>
+  <data name="ErrorWachtwordInvalid" xml:space="preserve">
+    <value>Het antwoord zou 1-100 karakters moeten bevatten.</value>
+  </data>
+  <data name="ErrorAnswer" xml:space="preserve">
+    <value>Het antwoord zou 1-100 karakters moeten bevatten.</value>
+  </data>
+  <data name="ErrorLoginInvalid" xml:space="preserve">
+    <value>Gebruikersnaam of wachtwoord zijn onjuist.</value>
+  </data>
+  <data name="ErrorLoginNotFound" xml:space="preserve">
+    <value>Gebruiker is niet gevonden.</value>
+  </data>
+  <data name="ErrorLoginRequierdField" xml:space="preserve">
+    <value>Gebruikersnaam en wachtwoord zijn verplicht.</value>
+  </data>
+  <data name="defaultError" xml:space="preserve">
+    <value>Er is wat fout gegaan</value>
+  </data>
+  <data name="formZipcode" xml:space="preserve">
+    <value>Zipcode*</value>
+  </data>
+  <data name="formIdentityProof" xml:space="preserve">
+    <value>Upload een foto van je identiteitsbewijs</value>
+  </data>
+  <data name="formAddressProof" xml:space="preserve">
+    <value>Upload een foto van je gevestigingsbewijs</value>
+  </data>
+  <data name="formBankProof" xml:space="preserve">
+    <value>Upload een foto van je bankbewijs</value>
+  </data>
+  <data name="formAddress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="formAddress2" xml:space="preserve">
+    <value>Adres 2</value>
+  </data>
+  <data name="formEmail" xml:space="preserve">
+    <value>e-mailadres*</value>
+  </data>
+  <data name="formFirm" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="formFirstName" xml:space="preserve">
+    <value>Voornaam*</value>
+  </data>
+  <data name="formHouseNr" xml:space="preserve">
+    <value>Huis nr*</value>
+  </data>
+  <data name="formMessage" xml:space="preserve">
+    <value>Uw bericht</value>
+  </data>
+  <data name="formName" xml:space="preserve">
+    <value>Uw naam</value>
+  </data>
+  <data name="formPassword" xml:space="preserve">
+    <value>Wachtwoord*</value>
+  </data>
+  <data name="formResidence" xml:space="preserve">
+    <value>Woonplaats*</value>
+  </data>
+  <data name="formSubject" xml:space="preserve">
+    <value>Onderwerp</value>
+  </data>
+  <data name="formSurname" xml:space="preserve">
+    <value>Achternaam*</value>
+  </data>
+  <data name="formTelephone" xml:space="preserve">
+    <value>Telefoonnummer*</value>
+  </data>
+  <data name="formUsername" xml:space="preserve">
+    <value>Gebruikersnaam*</value>
+  </data>
+  <data name="formVAT" xml:space="preserve">
+    <value>BTW*</value>
+  </data>
+  <data name="formCompany" xml:space="preserve">
+    <value>Bedrijf*</value>
+  </data>
+  <data name="myInformation" xml:space="preserve">
+    <value>Mijn gegevens</value>
+  </data>
+  <data name="formPasswordConfirm" xml:space="preserve">
+    <value>Herhaal wachtwoord*</value>
+  </data>
+  <data name="formProvince" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="formAddition" xml:space="preserve">
+    <value>Toev.</value>
+  </data>
+  <data name="formCurrentPassword" xml:space="preserve">
+    <value>Huidige wachtwoord*</value>
+  </data>
+  <data name="formNewPassword" xml:space="preserve">
+    <value>Nieuw wachtwoord*</value>
+  </data>
+  <data name="formNewPasswordConfirm" xml:space="preserve">
+    <value>Bevestiging nieuw wachtwoord*</value>
+  </data>
+  <data name="formAttachment" xml:space="preserve">
+    <value>Bijlage</value>
+  </data>
+  <data name="formMobile" xml:space="preserve">
+    <value>Mobiele telefoonnummer</value>
+  </data>
+  <data name="Contactgegevens" xml:space="preserve">
+    <value>Contact informatie</value>
+  </data>
+  <data name="formDayOfBirth" xml:space="preserve">
+    <value>Verjaardag</value>
+  </data>
+  <data name="formMonthOfBirth" xml:space="preserve">
+    <value>Verjaarmaand</value>
+  </data>
+  <data name="formYearOfBirth" xml:space="preserve">
+    <value>Verjaarjaar</value>
+  </data>
+  <data name="formGebruiker" xml:space="preserve">
+    <value>formGebruiker</value>
+  </data>
+  <data name="formExtraFieldOrInformation" xml:space="preserve">
+    <value>Extra veld</value>
+  </data>
+  <data name="formTerms" xml:space="preserve">
+    <value>Ik ga akkoord met de</value>
+  </data>
+  <data name="formPrivacy" xml:space="preserve">
+    <value>privacy verklaring</value>
+  </data>
+  <data name="formTekstCadeaubon" xml:space="preserve">
+    <value>Tekst voor op de cadeaubon</value>
+  </data>
+  <data name="ltlbrowser" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="ltlipaddress" xml:space="preserve">
+    <value>IP adres</value>
+  </data>
+  <data name="ltllogindate" xml:space="preserve">
+    <value>Login datum</value>
+  </data>
+  <data name="ltllogoutdate" xml:space="preserve">
+    <value>Uitlog datum</value>
+  </data>
+  <data name="ltlNewStuff" xml:space="preserve">
+    <value>Nieuw Spul</value>
+  </data>
+  <data name="ltlWatchAll" xml:space="preserve">
+    <value>Bekijk alle </value>
+  </data>
+  <data name="ltlpriceineuros" xml:space="preserve">
+    <value>Prijs in €</value>
+  </data>
+  <data name="ltlremovefilters" xml:space="preserve">
+    <value>alle filters wissen</value>
+  </data>
+  <data name="ltlfilteren" xml:space="preserve">
+    <value>Filteren</value>
+  </data>
+  <data name="ltlRegister" xml:space="preserve">
+    <value>Inschrijven</value>
+  </data>
+  <data name="ltlLogin" xml:space="preserve">
+    <value>Log in op mijn account</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>Inloggen</value>
+  </data>
+  <data name="ltlHuisNr" xml:space="preserve">
+    <value>Huis nummer: </value>
+  </data>
+  <data name="ltlToev" xml:space="preserve">
+    <value>Toevoeging: </value>
+  </data>
+  <data name="ltlStraat" xml:space="preserve">
+    <value>Straat: </value>
+  </data>
+  <data name="ltlWelcome" xml:space="preserve">
+    <value>Welcom: </value>
+  </data>
+  <data name="ltlZekerVraag" xml:space="preserve">
+    <value>Weet u het zeker?</value>
+  </data>
+  <data name="ltlOperatingSystem" xml:space="preserve">
+    <value>Operating System</value>
+  </data>
+  <data name="ltlactie" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="ltlSecurityQuestion" xml:space="preserve">
+    <value>Beveiligings vraag</value>
+  </data>
+  <data name="ltlPasswordReset" xml:space="preserve">
+    <value>Wachtwoord reset</value>
+  </data>
+  <data name="KortingNietgeldig" xml:space="preserve">
+    <value>Kortingscode klopt niet</value>
+  </data>
+  <data name="KortingscodeBestaatal" xml:space="preserve">
+    <value>Kortingscode is al gebruikt</value>
+  </data>
+  <data name="KortingToegevoegd" xml:space="preserve">
+    <value>Discount code is activated</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Aantal</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Maat</value>
+  </data>
+  <data name="Subtotaal" xml:space="preserve">
+    <value>Subtotaal</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>Korting</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Bedrag</value>
+  </data>
+  <data name="Cantlogin" xml:space="preserve">
+    <value>Wachtwoord of e-mail ongeldig</value>
+  </data>
+  <data name="oldPassword" xml:space="preserve">
+    <value>Huidig wachtwoord*</value>
+  </data>
+  <data name="lostPassword" xml:space="preserve">
+    <value>Wachtwoord vergeten</value>
+  </data>
+  <data name="BeAware" xml:space="preserve">
+    <value>Let op:</value>
+  </data>
+  <data name="AfterClosing" xml:space="preserve">
+    <value>Na het sluiten van uw account kunt u niet meer deelnemen aan actieve loterijen</value>
+  </data>
+  <data name="YouNot" xml:space="preserve">
+    <value>U kunt zich niet aanmelden of een nieuw account openent</value>
+  </data>
+  <data name="DoorgaanWinkelen" xml:space="preserve">
+    <value>verder winkelen</value>
+  </data>
+  <data name="Kortingscode" xml:space="preserve">
+    <value>Korting toevoegen</value>
+  </data>
+  <data name="ordernumber" xml:space="preserve">
+    <value>Ordernummer</value>
+  </data>
+  <data name="trackingnumber" xml:space="preserve">
+    <value>Tracking nummer</value>
+  </data>
+  <data name="SendHelpMail" xml:space="preserve">
+    <value>Stuur ons een mailtje:</value>
+  </data>
+  <data name="Kortingscode1" xml:space="preserve">
+    <value>Korting toevoegen</value>
+  </data>
+  <data name="KortingscodeLabel" xml:space="preserve">
+    <value>Kortingscode</value>
+  </data>
+  <data name="aaa2weeks" xml:space="preserve">
+    <value>2 weken</value>
+  </data>
+  <data name="aaa30days" xml:space="preserve">
+    <value>30 dagen</value>
+  </data>
+  <data name="dateOfPurchase3" xml:space="preserve">
+    <value>Aankoopdatum</value>
+  </data>
+  <data name="lotteryTicket" xml:space="preserve">
+    <value>Lot nummer</value>
+  </data>
+  <data name="OfferteMelding" xml:space="preserve">
+    <value>Bedankt voor uw aanvraag, we werken er zo snel mogelijk aan.</value>
+  </data>
+  <data name="PerStuk" xml:space="preserve">
+    <value>Per stuk</value>
+  </data>
+  <data name="result" xml:space="preserve">
+    <value>Resultaat</value>
+  </data>
+  <data name="shoppingCart" xml:space="preserve">
+    <value>Winkelwagen</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Samenvatting</value>
+  </data>
+  <data name="TotaalInclBTW" xml:space="preserve">
+    <value>TOTAAL &lt;br/&gt; (incl. BTW)</value>
+  </data>
+  <data name="by" xml:space="preserve">
+    <value>door</value>
+  </data>
+  <data name="createAccount" xml:space="preserve">
+    <value>Maak een account</value>
+  </data>
+  <data name="forgotPassword" xml:space="preserve">
+    <value>Wachtwoord vergeten?</value>
+  </data>
+  <data name="aaa24hours" xml:space="preserve">
+    <value>24 uur</value>
+  </data>
+  <data name="aaa1week" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="problem" xml:space="preserve">
+    <value>Problemen?</value>
+  </data>
+  <data name="newUser" xml:space="preserve">
+    <value>Nieuwe gebruiker?</value>
+  </data>
+  <data name="postedAt" xml:space="preserve">
+    <value>Gepost op</value>
+  </data>
+  <data name="readMore" xml:space="preserve">
+    <value>Lees meer</value>
+  </data>
+  <data name="rememberPassword" xml:space="preserve">
+    <value>Wachtwoord onthouden</value>
+  </data>
+  <data name="requestQoute" xml:space="preserve">
+    <value>Offerte aanvragen</value>
+  </data>
+  <data name="customerService" xml:space="preserve">
+    <value>Klantenservice</value>
+  </data>
+  <data name="myAccount" xml:space="preserve">
+    <value>Mijn account</value>
+  </data>
+  <data name="ValidateIncorrectLogin" xml:space="preserve">
+    <value>Geen correcte login gegevens</value>
+  </data>
+  <data name="ValidateBeveiligingsantwoordNietJuist" xml:space="preserve">
+    <value>Beveligings antwoord is onjuist.</value>
+  </data>
+  <data name="ValidateEmailadresBestaat" xml:space="preserve">
+    <value>Gebruiker met e-mailadres bestaat al: </value>
+  </data>
+  <data name="ValidateEmailadresNietJuist" xml:space="preserve">
+    <value>E-mailadres is niet correct: </value>
+  </data>
+  <data name="ValidateGebruikersnaamBestaat" xml:space="preserve">
+    <value>Er is al een gebruiker met dit e-mailadres: </value>
+  </data>
+  <data name="ValidateOnbekendeFout" xml:space="preserve">
+    <value>Een onbekende fout is opgetreden.</value>
+  </data>
+  <data name="ValidateWachtwoordEisen" xml:space="preserve">
+    <value>Het wachtwoord moet minstens 5 karakters hebben.</value>
+  </data>
+  <data name="ValidateEmailadresOnjuist" xml:space="preserve">
+    <value>Het ingevoerde e-mailadres is niet juist.</value>
+  </data>
+  <data name="ValidateVeldenVerplicht" xml:space="preserve">
+    <value>Velden gemarkeerd met (*) zijn verplicht.</value>
+  </data>
+  <data name="ValidateTerms" xml:space="preserve">
+    <value>U dient akkoord te gaan met de algemene voorwaarden.</value>
+  </data>
+  <data name="RelatedPosts" xml:space="preserve">
+    <value>Gerelateerde blogs</value>
+  </data>
+  <data name="shareThis" xml:space="preserve">
+    <value>Delen:</value>
+  </data>
+  <data name="shippingAddress" xml:space="preserve">
+    <value>Voeg een aflever adres toe</value>
+  </data>
+  <data name="brand" xml:space="preserve">
+    <value>Merk</value>
+  </data>
+  <data name="categories" xml:space="preserve">
+    <value>Categorieën</value>
+  </data>
+  <data name="deliveryTime" xml:space="preserve">
+    <value>Lever tijd</value>
+  </data>
+  <data name="download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="editDetails" xml:space="preserve">
+    <value>Details wijzigen</value>
+  </data>
+  <data name="filterSection" xml:space="preserve">
+    <value>Filter producten</value>
+  </data>
+  <data name="check" xml:space="preserve">
+    <value>Jouw bestand wordt binnen 24 gecontroleerd</value>
+  </data>
+  <data name="ordered" xml:space="preserve">
+    <value>Besteld</value>
+  </data>
+  <data name="orderHistory" xml:space="preserve">
+    <value>Bestelgeschiedenis</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>Prijs</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="GegevensGewijzigd" xml:space="preserve">
+    <value>Uw wijzigingen zijn opgeslagen</value>
+  </data>
+  <data name="Aantal" xml:space="preserve">
+    <value>Aantal</value>
+  </data>
+  <data name="AccountAanmaken" xml:space="preserve">
+    <value>Account aanmaken?</value>
+  </data>
+  <data name="AddDiscount" xml:space="preserve">
+    <value>Voer uw kortingscode in</value>
+  </data>
+  <data name="Adress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="allreadyHaveAnAccount" xml:space="preserve">
+    <value>Al een account? log hier in!</value>
+  </data>
+  <data name="allreadyInUse" xml:space="preserve">
+    <value>Dit emailadres is al in gebruik</value>
+  </data>
+  <data name="AnderAdres" xml:space="preserve">
+    <value>Mijn bezorg- en factuuradres zijn verschillend</value>
+  </data>
+  <data name="Betalen" xml:space="preserve">
+    <value>Bestel</value>
+  </data>
+  <data name="DiscountCode" xml:space="preserve">
+    <value>Gift card/discount code</value>
+  </data>
+  <data name="DoorgaanWinkelen1" xml:space="preserve">
+    <value>&lt; verder winkelen</value>
+  </data>
+  <data name="fillAdres" xml:space="preserve">
+    <value>Vul adres in</value>
+  </data>
+  <data name="fillDetails" xml:space="preserve">
+    <value>Vul gegevens in</value>
+  </data>
+  <data name="invoice" xml:space="preserve">
+    <value>Bedankt voor uw bestelling</value>
+  </data>
+  <data name="KortingNietgeldig1" xml:space="preserve">
+    <value>Kortingscode klopt niet</value>
+  </data>
+  <data name="Kortingscode11" xml:space="preserve">
+    <value>Korting toevoegen</value>
+  </data>
+  <data name="Kortingscode2" xml:space="preserve">
+    <value>Korting toevoegen</value>
+  </data>
+  <data name="KortingscodeBestaatal1" xml:space="preserve">
+    <value>Kortingscode is al gebruikt</value>
+  </data>
+  <data name="KortingscodeLabel1" xml:space="preserve">
+    <value>Kortingscode</value>
+  </data>
+  <data name="KortingToegevoegd1" xml:space="preserve">
+    <value>Discount code is activated</value>
+  </data>
+  <data name="OfferteMelding1" xml:space="preserve">
+    <value>Bedankt voor uw aanvraag, we werken er zo snel mogelijk aan.</value>
+  </data>
+  <data name="Omschrijving" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Titel" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="Maat" xml:space="preserve">
+    <value>Maat</value>
+  </data>
+  <data name="OrderRemark" xml:space="preserve">
+    <value>04. Opmerkingen?</value>
+  </data>
+  <data name="PerStuk1" xml:space="preserve">
+    <value>Per stuk</value>
+  </data>
+  <data name="Prijs" xml:space="preserve">
+    <value>Prijs</value>
+  </data>
+  <data name="shoppingCart1" xml:space="preserve">
+    <value>Winkelwagen</value>
+  </data>
+  <data name="Shoppingcartcontains" xml:space="preserve">
+    <value>Controleer uw winkelwagen voordat u een bestelling plaatst</value>
+  </data>
+  <data name="Subtotaal1" xml:space="preserve">
+    <value>Subtotaal</value>
+  </data>
+  <data name="Summary1" xml:space="preserve">
+    <value>Samenvatting</value>
+  </data>
+  <data name="TotaalInclBTW1" xml:space="preserve">
+    <value>TOTAAL &lt;br/&gt; (incl. BTW)</value>
+  </data>
+  <data name="TotaalInclBTW2" xml:space="preserve">
+    <value>TOTAAL  (incl. BTW)</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Totaal</value>
+  </data>
+  <data name="Verzendkosten" xml:space="preserve">
+    <value>Verzendkosten</value>
+  </data>
+  <data name="EmailadresOnjuist" xml:space="preserve">
+    <value>EmailadresOnjuist</value>
+  </data>
+  <data name="SelecteerBetaalmethode" xml:space="preserve">
+    <value>Selecteer betaalmethode</value>
+  </data>
+  <data name="BeveiligingsantwoordNietJuist" xml:space="preserve">
+    <value>BeveiligingsantwoordNietJuist</value>
+  </data>
+  <data name="EmailadresBestaat" xml:space="preserve">
+    <value>EmailadresBestaat</value>
+  </data>
+  <data name="EmailadresNietJuist" xml:space="preserve">
+    <value>EmailadresNietJuist</value>
+  </data>
+  <data name="GebruikersnaamBestaat" xml:space="preserve">
+    <value>GebruikersnaamBestaat</value>
+  </data>
+  <data name="OnbekendeFout2" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="WachtwoordEisen" xml:space="preserve">
+    <value>Wachtwoord criterium</value>
+  </data>
+  <data name="WachtwoordKomtNietOvereen" xml:space="preserve">
+    <value>Wachtwoorden komen niet overheen</value>
+  </data>
+  <data name="changePassword" xml:space="preserve">
+    <value>Wijzig wachtwoord</value>
+  </data>
+  <data name="lblSort" xml:space="preserve">
+    <value>Sorteren op:</value>
+  </data>
+  <data name="WachtwoordFout" xml:space="preserve">
+    <value>Uw oude wachtwoord is fout en daardoor zijn uw gegevens niet gewijzigd.</value>
+  </data>
+  <data name="Besteld" xml:space="preserve">
+    <value>Besteld</value>
+  </data>
+  <data name="DownloadBestellingPDF" xml:space="preserve">
+    <value>Download (pdf)</value>
+  </data>
+  <data name="Ordernummer" xml:space="preserve">
+    <value>Bestellingsnummer</value>
+  </data>
+  <data name="priceOnRequest" xml:space="preserve">
+    <value>Prijs op aanvraag</value>
+  </data>
+  <data name="priceOnRequest1" xml:space="preserve">
+    <value>Prijs op aanvraag</value>
+  </data>
+  <data name="directlyAvailable" xml:space="preserve">
+    <value>Direct beschikbaar</value>
+  </data>
+  <data name="quotation" xml:space="preserve">
+    <value>Aanvragen</value>
+  </data>
+  <data name="validateThisFile" xml:space="preserve">
+    <value>Bestand niet toegestaan. upload 1 van deze bestanden:</value>
+  </data>
+  <data name="noFileSelected" xml:space="preserve">
+    <value>Geen bestand geselecteerd</value>
+  </data>
+  <data name="uploaden" xml:space="preserve">
+    <value>Uploaden</value>
+  </data>
+  <data name="onQoutation" xml:space="preserve">
+    <value>Op aanvraag</value>
+  </data>
+  <data name="OrderNummerIs" xml:space="preserve">
+    <value>Jouw bestelnummer is:</value>
+  </data>
+  <data name="Bezorgadres" xml:space="preserve">
+    <value>Bezorg adres</value>
+  </data>
+  <data name="Factuuradres" xml:space="preserve">
+    <value>Factuur adres</value>
+  </data>
+  <data name="MijnAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="MijnBestellingen" xml:space="preserve">
+    <value>Bestellingen</value>
+  </data>
+  <data name="SelecteerBank" xml:space="preserve">
+    <value>Selecteer uw bank</value>
+  </data>
+  <data name="ForgotPasswordTitle" xml:space="preserve">
+    <value>Wachtwoord vergeten?</value>
+  </data>
+  <data name="userNotInSystem" xml:space="preserve">
+    <value>niet bekend. Controleer a.u.b. het ingevoerde gebruikersnaam.</value>
+  </data>
+  <data name="UserWithUsername" xml:space="preserve">
+    <value>Account met gebruikersnaam:</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>Gegevens bewaren</value>
+  </data>
+  <data name="saveInfo" xml:space="preserve">
+    <value>Handig voor de volgende keer</value>
+  </data>
+  <data name="TitleInfo" xml:space="preserve">
+    <value>01. Uw gegevens</value>
+  </data>
+  <data name="TitleDispatch" xml:space="preserve">
+    <value>02. Verzendmethode</value>
+  </data>
+  <data name="TitlePayment" xml:space="preserve">
+    <value>03. Betaalmethode</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="reference" xml:space="preserve">
+    <value>Referentie</value>
+  </data>
+  <data name="logOut" xml:space="preserve">
+    <value>Uitloggen</value>
+  </data>
+  <data name="Opmerking" xml:space="preserve">
+    <value>Extra info</value>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>Bestel</value>
+  </data>
+  <data name="FeaturedPieces" xml:space="preserve">
+    <value>Vergelijkbare artikelen</value>
+  </data>
+  <data name="Maandag" xml:space="preserve">
+    <value>Maandag</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Artikelen</value>
+  </data>
+  <data name="NieuwsbriefEmail" xml:space="preserve">
+    <value>vul uw e-mailadres in</value>
+  </data>
+  <data name="OverOns" xml:space="preserve">
+    <value>Over ons</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>* Verplicht veld</value>
+  </data>
+  <data name="ScrollToDiscover" xml:space="preserve">
+    <value>Scroll en ontdek meer</value>
+  </data>
+  <data name="ShopThisLook" xml:space="preserve">
+    <value>Bestel deze look</value>
+  </data>
+  <data name="ViewAll" xml:space="preserve">
+    <value>Bekijk alles</value>
+  </data>
+  <data name="Opmerking1" xml:space="preserve">
+    <value>Opmerkingen</value>
+  </data>
+  <data name="shippingAddressEdit" xml:space="preserve">
+    <value>Wijzig je aflever adres</value>
+  </data>
+  <data name="KaartGeldigTot" xml:space="preserve">
+    <value>CardDate</value>
+  </data>
+  <data name="Kaartnummer" xml:space="preserve">
+    <value>CardNumber</value>
+  </data>
+  <data name="Land" xml:space="preserve">
+    <value>Land:</value>
+  </data>
+  <data name="Limietbedrag" xml:space="preserve">
+    <value>AmountLimit</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Veelgestelde vragen</value>
+  </data>
+  <data name="EmailUs" xml:space="preserve">
+    <value>Als je vragen hebt kan je altijd onze klanten service bellen op: </value>
+  </data>
+  <data name="OpenHours" xml:space="preserve">
+    <value>Openings tijden:</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Telefoon:</value>
+  </data>
+  <data name="TermsConditions" xml:space="preserve">
+    <value>Voorwaarden</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Volledige naam*</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email*</value>
+  </data>
+  <data name="Emaillink" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Facebooklink" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="Instagramlink" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="MobileNumber" xml:space="preserve">
+    <value>Mobiel nummer*</value>
+  </data>
+  <data name="DOB" xml:space="preserve">
+    <value>Geboorte datum*</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Dag</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Maand</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Jaar</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Geslacht*</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Vrouw</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Verder</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres*</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Adres lijn 1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Adres lijn 2</value>
+  </data>
+  <data name="ZipCodeCity" xml:space="preserve">
+    <value>Post code en stad*</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Post code</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Stad:</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Land*</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Gebruikersnaam*</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Wachtwoord*</value>
+  </data>
+  <data name="ConfPassword" xml:space="preserve">
+    <value>Verifieer wachtwoord*</value>
+  </data>
+  <data name="SecurityQuestion" xml:space="preserve">
+    <value>Beveiligings vraag*</value>
+  </data>
+  <data name="YourAnswer" xml:space="preserve">
+    <value>Antwoord*</value>
+  </data>
+  <data name="aaa18" xml:space="preserve">
+    <value>Ik ben 18 jaar of ouder en ik accepteer de voorwaarden die gelden voor een One in a hundred account</value>
+  </data>
+  <data name="JoinUs" xml:space="preserve">
+    <value>Doe mee!</value>
+  </data>
+  <data name="DrawDate" xml:space="preserve">
+    <value>Trekkings datum:</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categorie:</value>
+  </data>
+  <data name="CityWinner" xml:space="preserve">
+    <value>Stads winnaar:</value>
+  </data>
+  <data name="YouNeed" xml:space="preserve">
+    <value>U moet contact opnemen met onze klantenservice om uw account opnieuw te activeren</value>
+  </data>
+  <data name="LetUsKnow" xml:space="preserve">
+    <value>Laat ons weten waarom je je account wilt sluiten</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuleer</value>
+  </data>
+  <data name="CloseAccount" xml:space="preserve">
+    <value>Sluit mijn account</value>
+  </data>
+  <data name="SelectTimeframe" xml:space="preserve">
+    <value>Selecteer hieronder een tijdsbestek voor zelfuitsluiting</value>
+  </data>
+  <data name="aaa24" xml:space="preserve">
+    <value>24 uur</value>
+  </data>
+  <data name="aaa7" xml:space="preserve">
+    <value>7 dagen</value>
+  </data>
+  <data name="aaa1" xml:space="preserve">
+    <value>1 maand</value>
+  </data>
+  <data name="aaa3" xml:space="preserve">
+    <value>3 maanden</value>
+  </data>
+  <data name="aaa6" xml:space="preserve">
+    <value>6 maanden</value>
+  </data>
+  <data name="Indefinitely" xml:space="preserve">
+    <value>Oneindig</value>
+  </data>
+  <data name="SelfWarning" xml:space="preserve">
+    <value>U kunt gedurende de geselecteerde periode niet inloggen. We zullen u op de hoogte stellen wanneer de zelfuitsluiting vervalt. Als u er de voorkeur aan geeft om uw account definitief te sluiten, gaat u naar het gedeelte 'Gegevens bewerken' </value>
+  </data>
+  <data name="DoYou" xml:space="preserve">
+    <value>Wil je mee doen aan de Limted edtions loterijen?</value>
+  </data>
+  <data name="BecomePremium" xml:space="preserve">
+    <value>Word een premium member</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="FindSolution" xml:space="preserve">
+    <value>Vind de oplossing hier:</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Zoek</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Algemeen</value>
+  </data>
+  <data name="GameID" xml:space="preserve">
+    <value>Spel ID</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="LotteryTicket4" xml:space="preserve">
+    <value>Loterij tickets</value>
+  </data>
+  <data name="LotterySeries" xml:space="preserve">
+    <value>Loterij serie: </value>
+  </data>
+  <data name="StartDateLotterySeries" xml:space="preserve">
+    <value>Begin datum loterij serie: </value>
+  </data>
+  <data name="SendNewMessage" xml:space="preserve">
+    <value>Stuur een nieuw bericht</value>
+  </data>
+  <data name="TheNetherlands" xml:space="preserve">
+    <value>Nederland</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Onderwerp</value>
+  </data>
+  <data name="NewsUpdate" xml:space="preserve">
+    <value>Nieuws update</value>
+  </data>
+  <data name="editPassword" xml:space="preserve">
+    <value>Wijzig wachtwoord</value>
+  </data>
+  <data name="LoginUnable" xml:space="preserve">
+    <value>Je kan deze pagina niet bezoeken, log aub in!</value>
+  </data>
+  <data name="VisitDraw" xml:space="preserve">
+    <value>bezoek trekking!</value>
+  </data>
+  <data name="MoreTickets" xml:space="preserve">
+    <value>Koop meer tickets</value>
+  </data>
+  <data name="ContinueCheckout" xml:space="preserve">
+    <value>Ga naar de checkout</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>Gerelateerde artikelen</value>
+  </data>
+  <data name="bedanktTerug" xml:space="preserve">
+    <value>Terug naar website</value>
+  </data>
+</root>

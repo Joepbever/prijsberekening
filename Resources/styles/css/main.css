@@ -1,0 +1,17 @@
+﻿/* ==========================================================================
+   CSS COMMENTS
+   ========================================================================== */
+@font-face {
+  font-family: 'DINMedium';
+  src: url("/Resources/fonts/DINMedium.eot");
+  src: local("DINMedium"), url("/Resources/fonts/DINMedium.woff2") format("woff2"), url("/Resources/fonts/DINMedium.woff") format("woff"), url("/Resources/fonts/DINMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'DIN';
+  src: url("/Resources/fonts/din/dinregularwebfont.eot");
+  src: local("dinregularwebfont"), url("/Resources/fonts/din/dinregularwebfont.woff") format("woff"), url("/Resources/fonts/din/dinregularwebfont.ttf") format("truetype"); }
+
+/* ==========================================================================
+   @Media querrys
+   ========================================================================== */
+

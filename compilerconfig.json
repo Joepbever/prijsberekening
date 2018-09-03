@@ -1,0 +1,16 @@
+﻿[
+  {
+    "outputFile": "Resources/styles/ntf/css/main.css",
+    "inputFile": "Resources/styles/ntf/main.scss",
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFile": "Resources/styles/css/main.css",
+    "inputFile": "Resources/styles/main.scss",
+    "minify": {
+      "enabled": false
+    }
+  }
+]
